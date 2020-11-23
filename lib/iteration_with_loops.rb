@@ -12,8 +12,9 @@ while row_index < src.count do
     if src [row_index] [element_index] < lowest_daily_temp
       lowest_daily_temp = src [row_index] [element_index]
     end
-    lowest_temperatures << lowest_daily_temp
+    element_index += 1
   end
+  lowest_temperatures << lowest_daily_temp
   row_index += 1
 end
 lowest_temperatures
